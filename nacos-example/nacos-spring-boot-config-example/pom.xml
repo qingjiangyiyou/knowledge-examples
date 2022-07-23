@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nacos-spring-cloud-config</artifactId>
-
+    <artifactId>nacos-spring-boot-config-example</artifactId>
 
     <properties>
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
@@ -27,11 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>com.alibaba.boot</groupId>
@@ -52,5 +46,4 @@
             <version>${nacos-config-spring-boot.version}</version>
         </dependency>
     </dependencies>
-
 </project>
