@@ -17,25 +17,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class NacosConsumerApplication {
 
-    @Autowired
-    private RestTemplate restTemplate;
-
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
-
-    @Bean
-    public ApplicationRunner runner(){
-        return new ApplicationRunner() {
-            @Override
-            public void run(ApplicationArguments args) throws Exception {
-                System.out.println(restTemplate.getForObject("http://spring-cloud-discovery-provider/hello/consumer", String.class));
-            }
-        };
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(NacosConsumerApplication.class, args);
     }
